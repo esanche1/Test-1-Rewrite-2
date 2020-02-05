@@ -1,0 +1,202 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+\title{Assignment 11}
+\author{Ed Sanchez\\ 
+Math 200: Techniques of Mathematical Proofs}
+ 
+\maketitle
+ 
+\begin{problem}{9.9}
+\text{ }\\
+\end{problem}
+ 
+\begin{enumerate}
+\item R1 is not a function
+\\
+\item R2 is not a function
+\\
+\item R3 is a function
+\\
+\item R4 is a function
+\\
+\item R5 is not a function
+\end{enumerate}
+ 
+\begin{problem}{9.10}
+\text{ }
+\begin{enumerate}
+\item $g(\mathbb{Z})=\{...-7,-3,1,5,9...\}$
+\\
+g(E)=\{4(2n)+1\}
+\\
+g(E)=\{...,-15,-7,1,9,17,...\}
+\\
+\item $g^{-1}(\mathbb{N})=\{ \frac{r-1}{4}: r \in \mathbb{N}\}$
+\\
+$g^{-1}(\mathbb{N})=\{0,\frac{1}{4},\frac{1}{2},\frac{3}{4}...\}$
+\\
+$g^{-1}(D)=\{\frac{n-1}{2}:n \in \mathbb{Z}\}$
+\\
+$g^{-1}(D)=\{...,\frac{-3}{2},-1,\frac{-1}{2}...\}$
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}{9.11}
+\text{ }
+\end{problem}
+
+\begin{enumerate}
+\item F(C) = \{ $x^2 \geq 1$:$x \in \mathbb{R}$,$x\geq 1$\}
+\\
+$F^{-1}$(C)=$C \cup \{x \in \mathbb{R} : -x \in C\}$
+\\
+$F^{-1}$(D)=$( 0, \infty ) \cup (-\infty , 0)$
+\\
+$F^{-1}(\{1\})= \{ 1, -1\} $
+\\
+\item F(C) =$[ 0, \infty\}$
+\\
+$F^{-1}$(C)=$\{ e^x : x \in \mathbb{R}, x \geq 1\}$
+\\
+$F^{-1}$(D)=$\{e^x: x \mathbb{R}^+ \}$
+\\
+$F^{-1}(\{1\})= \{ e \} $
+\\
+\item F(C) =$[ e, \infty )$
+\\
+$F^{-1}$(C)=$[0,\infty)$
+\\
+$F^{-1}$(D)=$(- \infty, \infty)$
+\\
+$F^{-1}(\{1\})= \{ 0 \} $
+\\
+\item
+F(C) =$[ -1, 1 ]$
+\\
+$F^{-1}$(C)=$\{ sin ^{-1} 1\}$
+\\
+$F^{-1}$(D)=$\{ sinc^{-1}: x \mathbb{R}^+ \}$
+\\
+$F^{-1}(\{1\})= \{ sin ^{-1} 1\}$
+\\
+\item
+$F(C) =( - \infty, 1 ]$
+\\
+$F^{-1}$(C)=$\{1\}$
+\\
+$F^{-1}$(D)=$(0,2)$
+\\
+$F^{-1}(\{1\})=\{ 1 \}$
+\end{enumerate}
+
+\begin{problem}{9.23}
+\text{ }\\
+The claim is valid because F(a) = \{a\}
+\end{problem}
+
+
+\begin{problem}{9.24}
+\text{ }
+\end{problem}
+\begin{enumerate}
+\item Recognize $0,-4\in\mathbb{R}$. Since f(0)=9 and f(-4)=9, f is not one-to-one.
+\item When we isolate x, we find that $x=\sqrt[y-5]-2$. Yet for every $y\in \mathbb{R}$, $x \not \in \mathbb{R}$. For example, if y=4,$\sqrt[y-5]-2 \not \in \mathbb{R}$. F is not onto.
+\end{enumerate}
+
+
+\begin{problem}{9.25}
+\text{ }\\
+There is a function from $\mathbb{R}$ to $\mathbb{R}$ that is onto but not one to one. For example, F(x) = x((x+1)(x-1)). Since f(0)=f(1), f is not one to one. Furthermore, Since the function is continuous and differentiable, f is onto.  
+\end{problem}
+
+\begin{problem}{9.31}
+\text{ }\\
+Claim: F is well defined
+\end{problem}
+\begin{proof}
+Assume that f: $\mathbb{Z}_5 \Rightarrow \mathbb{Z}_5$ where f([a])=[2a+3]. Now assume that [a]=[b] for $[a],[b]\in\mathbb{Z}_5$. Therefore, for $m\in\mathbb{Z}$ $a-b=5m$. This means
+\begin{align}
+(2a+3)-(2b+3)&=2(a-b)
+\\ \nonumber
+&=5(2m)
+\\ \nonumber
+\end{align}
+Since $2m \in \mathbb{Z}$, $ 5|(2a+3)-(2b+3)$. Hence, [2a+3]=[2b+3] so f(a) = f(b). The function is well defined. 
+\end{proof}
+For the function,f, to be bijective, each distinct image of f must have a unique pre-image and vise versa. Since $\mathbb{Z}_5$ has 5 classes, we need to show that all 5 classes have distinct images. 
+\begin{align}
+f([0])&=[2(0)+3]
+\\ \nonumber
+&=[3]
+\\ 
+f([1])&=[2(1)+3]
+\\ \nonumber
+&=[5]
+\\ \nonumber
+&=[0]
+\\
+f([2])&=[2(2)+3]
+\\ \nonumber
+&=[7]
+\\ \nonumber
+&=[2]
+\\
+f([3])&=[2(3)+3]
+\\ \nonumber
+&=[9]
+\\ \nonumber
+&=[4]
+\\
+f([4])&=[2(4)+3]
+\\ \nonumber
+&=[11]
+\\ \nonumber
+&=[1]
+\end{align}
+Since every distinct element has a distinct element, the function is injective. Since $f(\mathbb{Z}_5)=\mathbb{Z}_5$, the function is also surjective. Therefore, the function is bijective. 
+\\
+\begin{problem}{9.43}
+\text{ }\\
+Claim:If g $\circ$ h is one-to-one, then f is one-to-one.
+\end{problem}
+\begin{proof}
+Assume $g \circ f: A \rightarrow C$ is one-to-one. Since$g \circ f$ is one-to-one, $a_1,a_2 \in A$. Therefore,$g \circ f (a_1)=g \circ f (a_2)\Rightarrow a_1 = a_2$.Therefore, f is one to one.
+\end{proof}
+
+\begin{proof}
+Assume that the function, f, is not one to one so g $\circ$ f is not one to one. That means that f must at least one element that has an identical image in the codomian. Assume that $a,b \in A, a \not = b$ and f(a)=f(b). But, we find that $g \circ f (a)=g \circ f (b)$. Therefore, g $\circ$ f is not one to one and the result holds by the method of contrapositive. 
+\end{proof}
+
+\begin{proof}
+Assume, to the contrary, that there exist a function such that g $\circ$ f is injective and f is not one to one. Since f is not one to one $a \not = b$ but f(a)=f(b). However, we find that $g \circ f (a)=g \circ f (b)$. This contradicts the assumption that  g $\circ$ f is not one to one and that f is one to one if g $\circ$ f is one to one by contradiction. 
+\end{proof}
+
+\begin{proof}
+In order to prove if g $\circ$ f is one to one, then g is not one to one, we must show one counterexample. First, we must start by defining A,B and C. A = \{ 1,2,3\} , B= \{4,5,6,7\} and C=\{8,9,10\}.\\
+Thus, g $\circ$ f =\{(1,8),(2,9),(3,10)\}. So g $\circ$ f is one-to one. g=\{(4,8),(5,9),(6,10),(7,10)\} Yet g contains elements from B that have some from the same image in C.Specifically, 6 and 7. Therefor g is not one to one. Therefore, if g $\circ$ f is one to one, then g is not one to one. 
+\end{proof}
+\end{document}

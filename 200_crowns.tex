@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+\title{In Class Presentation}
+\author{Ed Sanchez\\ 
+Math 200: Techniques of Mathematical Proofs}
+ 
+\maketitle
+ 
+\begin{problem}{6.14}
+\text{ }\\
+Claim: The kings daughter had three suitors and couldt decide which one to marry. So the king said,"I have three gold crowns and two silver ones. I will put either a gold or silver crown on each of your heads. The suitor who can tell me which crown he has will marry my daughter." the first suitor looked around and said he couldn't tell. The second did the same. The third suitor said: "I have a gold crown." he is correct, but the daughter was puzzled: The suitor was blind. how did he know? 
+\end{problem}
+ 
+\begin{proof}
+If the first suitor saw that the second and third suitors had silver crowns then he would have known his crown was gold. Yet, he did not. Thus, the second or third suitor must have the gold crown. Therefore, there are 3 options.
+\begin{enumerate}
+\item The second suitor had a silver crown and the third suitor had a gold crown
+\\
+\item Both suitors have a gold crown
+\\
+\item the second suitor had a gold crown and the third suitor had a silver crown. 
+\end{enumerate}
+Yet, the second suitor didn't know what crown he had. That means that the first and third suitors didn't have silver crowns. Hence, only the first and second possibility are valid. That is how the 3rd suitor knew he had the gold crown.  
+\end{proof}
+ 
+
+
+\end{document}

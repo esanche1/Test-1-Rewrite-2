@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+\title{In Class Presentation 1}
+\author{Ed Sanchez\\ 
+Math 366: Techniques of Mathematical Proofs}
+ 
+\maketitle
+ 
+\begin{problem}{: Worksheet 3; Question 4}
+\text{ }\\
+Claim: If $<\gamma\'(t),u>$ $\leq$ $|\gamma'(t)|$, then $|q-p|\leq$$\int_{a}^{b} |\gamma'(t)| dt$ for $\gamma(a)=p$ and $\gamma(b)=q$.
+\end{problem}
+\begin{proof}
+Assume that $<\gamma\'(t),u>$ $\leq$ $|\gamma'(t)|$. Using the Cauchy Schwartz inequality, one can claim the following. 
+\begin{align}
+\\ \nonumber
+<\gamma\'(t),u> \leq |\gamma'(t)| 
+\\ \nonumber
+<\gamma\'(t),u> \leq |\gamma'(t)||u|
+\\ \nonumber
+|\gamma'(t)||u|=|\gamma\'(t)|
+\end{align}
+The last step from (1) can be completed because the norm of a unit vector is equivalent to 1. Next, we will expand the left side of the inequality. 
+\begin{align}
+\\ \nonumber
+&\int \gamma'(t) \bullet u \ dt 
+\\ \nonumber
+&= \int \gamma'(t)_{1}u_{1} dt + \int \gamma'(t)_{2}u_{2} dt 
+\\ \nonumber
+&= u\int \gamma'(t)_{1} dt + \int \gamma'(t)_{2} dt
+\\ \nonumber 
+&= u\int \gamma'(t) dt
+\end{align}
+\begin{comment}
+%\int f_{1}(t)+f_{2}(t) dt =\int f_{1}(t) dt + \int f_{2}(t) dt
+%\int
+\end{comment}
+From here, one can apply the bounds of the integral and continue to solve the inequality
+\begin{align}
+\\ \nonumber
+\int_{a}^{b} \gamma'(t) dt \bullet u \leq \int_{a}^{b} |\gamma'(t)| dt
+\\ \nonumber
+<\gamma(b)-\gamma(a), u> \leq \int_{a}^{b} |\gamma'(t)| dt
+\\ \nonumber
+<q-p, u> \leq \int_{a}^{b} |\gamma'(t)| dt
+\end{align}
+By taking $u=\frac{(q-p)}{|q-p|}$, one can see...
+\begin{align}
+\\ \nonumber
+<q-p, \frac{(q-p)}{|q-p|}> \leq \int_{a}^{b} |\gamma'(t)| dt 
+\\ \nonumber
+(q-p) \bullet \frac{(q-p)}{|q-p|} \leq \int_{a}^{b} |\gamma'(t)| dt
+\\ \nonumber
+\frac{|q-p|^2}{|q-p|} \leq \int_{a}^{b} |\gamma'(t)| dt
+\\ \nonumber
+|q-p| \leq \int_{a}^{b} |\gamma'(t)| dt
+\\ \nonumber
+\end{align}
+Interpreting the results, one can conclude that a straight line between  will be equal to or shorter than the arc length of any other curve.
+\end{proof}
+
+
+
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+\title{In Class Presentation 2}
+\author{Ed Sanchez\\ 
+Math 200: Techniques of Mathematical Proofs}
+ 
+\maketitle
+ 
+\begin{problem}{Deumurability}
+\text{ }\\
+Claim: If A and B are denumerable sets, then A X B is denumerable. 
+\end{problem}
+\begin{proof}
+Assume there are two denumerable A and B.Therefore, for A, there is a bijective function f: $\mathbb{N} \Rightarrow A$ and for B there is a bijective function g: $\mathbb{N} \Rightarrow B$. For A X B to be bijective, there must be a function T(x,y)= {(1,(f(1),g(1)),(2,(f(2),g(2)),...,(n-1,(f(n-1),g(n-1))}. Hence, the map of f o G: A X B $\rightarrow \mathbb{N}$ is onto because $a\in A$ is can be an arbitrary element of $\mathbb{N}$ such that f(a)=f(n-1).Similarly, since h is onto because $b\in B$ is can be an arbitrary element of $\mathbb{N}$ such that g(b)=g(n-1). This means that that T(x,y) =T(f(n-1),g(n-1)) so T is onto. Suppose that T(a,b) = T(x,y). This means that f(a) = f(x) and g(b)=g(y) and since g and f and injective, we see that a=x and b=y so T is one to one. Since T is both one to one and onto, this means that T is a bijective function and T: $\mathbb{N} \Rightarrow$ A X B. Therefore, A X B is enumerable.
+ 
+\end{proof}
+ 
+
+
+\end{document}
